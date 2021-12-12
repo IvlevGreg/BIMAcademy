@@ -65,6 +65,10 @@ body {
   align-items: center;
 }
 
+.header-nav {
+  width: 743px;
+}
+
 .header-logo {
   align-items: center;
 }
@@ -125,6 +129,7 @@ margin-right: 45px;
 
 .offers-item-name {
   margin-bottom: 15px;
+  margin-top: auto;
 }
 
 .offer-item-left:not(:last-child) {
