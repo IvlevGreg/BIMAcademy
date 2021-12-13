@@ -18,7 +18,7 @@ img {
 }
 
 body {
-  min-width: 1170px;
+  min-width: 1200px;
   font-family: 'muller', sans-serif;
 }
 
@@ -53,20 +53,16 @@ body {
   padding-left: 40px;
 }
 
-.section {
-  margin-bottom: 70px
-}
-
 /* header */
 
 .header-container-up {
   margin: 30px 0;
   justify-content: space-between;
   align-items: center;
-}
+  }
 
 .header-nav {
-  width: 743px;
+  max-width: 743px;
 }
 
 .header-logo {
@@ -75,6 +71,9 @@ body {
 
 .header-tel {
   margin-left: 40px;
+}
+.header-list {
+  flex-wrap: wrap;
 }
 
 .header-container-both {
@@ -97,6 +96,10 @@ margin-right: 45px;
 
 /* offers*/
 
+.section-offers {
+  margin-bottom: 70px;
+}
+
 .offers-title {
   margin-bottom: 20px;
 }
@@ -114,6 +117,17 @@ margin-right: 45px;
 .offer-article-right {
   position: relative;
   display: inline-block;
+  outline: 1px solid salmon;
+  
+}
+
+.offers-all {
+  align-items: stretch;
+}
+
+
+.offer-img {
+  height: 100%;
 }
 
 .offer-article-text {
@@ -138,11 +152,19 @@ margin-bottom: 23px;
 
 /* about-us */
 
+.section-about-us {
+  margin-bottom: 70px;
+}
+
 .about-us-title {
   margin-bottom: 11px;
 }
 
 /* services */
+
+.section-services {
+  margin-bottom: 47px;
+}
 
 .services-title {
   margin-bottom: 20px;
@@ -157,7 +179,7 @@ flex-basis: 573px;
 outline: 1px solid salmon;
 }
 
-.services-item:not(:nth-child(n+3)) {
+.services-item {
   margin-bottom: 23px;
 }
 
@@ -182,6 +204,10 @@ outline: 1px solid salmon;
 
 /* advantag */
 
+.section-advantag {
+  margin-bottom: 47px;
+}
+
 .advantag-title {
   margin-bottom: 30px;
 }
@@ -204,11 +230,15 @@ padding-top: 42px;
   margin-right: 23px;
 }
 
-.advanteg-item:not(:nth-child(n+5)) {
+.advanteg-item {
   margin-bottom: 23px;
 }
 
 /* hotel */
+
+.section-hotel {
+  margin-bottom: 47px;
+}
 
 .hotel-list {
   flex-wrap: wrap;
@@ -223,7 +253,7 @@ padding-top: 42px;
   margin-right: 23px;
 }
 
-.hotel-item:not(:nth-child(n+7)) {
+.hotel-item {
   margin-bottom: 23px;
 }
 
@@ -255,6 +285,7 @@ padding-top: 42px;
 
 .hotel-item-look {
   position: relative;
+  margin-bottom: 23px;
   flex-basis: 374px;
   height: 440px;
   outline: 1px solid salmon;
