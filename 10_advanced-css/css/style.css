@@ -78,6 +78,11 @@ body {
 :root {
   --btn-color: rgba(204, 153, 51, 1);
   --text-color: rgba(0, 0, 0, 1);
+  --pers-cab-color: #CC9933;
+  --header-color: #666;
+  --white-color: #fff;
+  --btn2-color: rgba(164, 115, 18, 1);
+  --links-color: rgba(233, 196, 121, 1);
 }
 
 
@@ -97,8 +102,8 @@ body {
 .btn {
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
-  border: 1px solid #CC9933;
+  color: var(--pers-cab-color);
+  border: 1px solid var(--pers-cab-color);
   border-radius: 10px;
   transition: background-color 0.4s ease , color 0.2s ease;
 }
@@ -132,7 +137,7 @@ body {
 
 .header-nav {
   max-width: 743px;
-  color: #666666;
+  color: var(--header-color);
 }
 
 .header-logo {
@@ -147,14 +152,14 @@ body {
 .header-tel {
 font-size: 20px;
 line-height: 20px;
-color: #666;
+color: var(--header-color);
 font-weight: 500;
 }
 
 .header-pers-cab {
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
+  color: var(--pers-cab-color);
   background-image: url(../img/pers-cab.svg);
   background-repeat: no-repeat;
   padding-left: 28px;
@@ -170,7 +175,7 @@ font-weight: 500;
   min-height: 70px;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-radius: 15px;
   }
 
@@ -185,7 +190,7 @@ margin-right: 45px;
 }
 
 .header-links {
-  color: #666;
+  color: var(--header-color);
 }
 
 .header-btn-both {
@@ -279,7 +284,7 @@ margin-right: 45px;
   line-height: 20px;
   font-weight: 400;
   opacity: 80%;
-  color: #FFFFFF;
+  color: var(--white-color);
 }
 
 .offers-item-name {
@@ -287,7 +292,7 @@ margin-right: 45px;
   margin-top: auto;
   font-size: 40px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: var(--white-color);
   font-weight: 700;
 }
 
@@ -344,7 +349,7 @@ margin-bottom: 23px;
 .services-item {
 flex-basis: 573px;
 margin-bottom: 23px;
-background-color: #fff;
+background-color: var(--white-color);
 border-radius: 15px;
 }
 
@@ -364,7 +369,7 @@ border-radius: 15px;
   padding-right: 15px;
   font-size: 20px;
   line-height: 40px;
-  color: #CC9933;
+  color: var(--pers-cab-color);
   font-weight: 500;
 /*   background-image: url(../img/more2.svg);
   background-repeat: no-repeat;
@@ -412,7 +417,7 @@ margin-bottom: 8px;
   flex-basis: 275px;
   padding: 0 42px 45px 41px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .advanteg-item:not(:nth-child(4n)) {
@@ -440,7 +445,7 @@ margin-bottom: 8px;
   margin-bottom: 23px;
   flex-basis: 374px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .hotel-item:not(:nth-child(3n)) {
@@ -510,7 +515,7 @@ margin-bottom: 8px;
 .hotel-link {
   margin-bottom: 27px;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   font-size: 20px;
   line-height: 40px;
   font-weight: 500;
@@ -550,7 +555,7 @@ min-height: 106px;
 padding: 0 28px;
 align-items: center;
 justify-content: space-evenly;
-background-color: #fff;
+background-color: var(--white-color);
 border-radius: 15px;
 }
 
@@ -625,7 +630,7 @@ input {
 }
 
 .contacts-both {
- background-color: #FFFFFF;
+ background-color: var(--white-color);
  border-radius: 15px;
  justify-content: flex-start;
 }
@@ -660,7 +665,7 @@ input {
   display: block;
   font-size: 16px;
   line-height: 24px;
-  color: #CC9933;
+  color: var(--pers-cab-color);
 }
 
 .contacts-item-link-descr {
@@ -720,14 +725,14 @@ width: 320px;
   margin-bottom: 49px;
   font-size: 16px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: var(--white-color);
 }
 
 .footer-address {
   margin-bottom: 14px;
   font-size: 16px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: var(--white-color);
   font-style: normal;
 }
 
@@ -735,7 +740,7 @@ width: 320px;
   display: inline;
   font-size: 16px;
   line-height: 24px;
-  color: #CC9933;
+  color: var(--pers-cab-color);
   
 }
 
@@ -757,19 +762,19 @@ width: 320px;
 /* animation */
 
 .btn:focus {
-  background-color: rgba(204, 153, 51, 1);
-  color: #FFFFFF;
+  background-color: var(--btn-color);
+  color: var(--white-color);
   outline: none
 }
 
 .btn:hover {
-  background-color: #CC9933;
-  color: #FFFFFF;
+  background-color: var(--pers-cab-color);
+  color: var(--white-color);
 }
 
 .btn:active {
   background-color:  #A47312;
-  color: #FFFFFF;
+  color: var(--white-color);
 }
   
 .header-links, .header-tel:hover {
@@ -783,11 +788,11 @@ width: 320px;
 
 .header-links:hover, .header-tel:hover {
   color: var(--btn-color);
-  outline: 1px solid rgba(204, 153, 51, 1);
+  outline: 1px solid var(--btn-color);
 }
 
 .header-links:active, .header-tel:active {
-  color: rgba(164, 115, 18, 1);
+  color: var(--btn2-color);
 }
 
 .animation-links {
@@ -795,17 +800,17 @@ width: 320px;
 }
 
 .animation-links:focus {
-  color: rgba(233, 196, 121, 1);
+  color: var(--links-color);
   outline: none;
   }
 
 .animation-links:hover {
   color: var(--btn-color);
-  outline: 1px solid rgba(204, 153, 51, 1);
+  outline: 1px solid var(--btn-color);
 }
 
 .animation-links:active  {
-  color: rgba(164, 115, 18, 1);
+  color: var(--btn2-color);
 }
 
 .footer-social-link {
@@ -818,15 +823,15 @@ width: 320px;
 }
 
 .footer-social-link:focus path{
-  fill: rgba(204, 153, 51, 1);
+  fill: var(--btn-color);
   }
   
 .footer-social-link:hover path{
-  fill: rgba(204, 153, 51, 1);
+  fill: var(--btn-color);
 }
 
 .footer-social-link:active path{
-  fill: rgba(164, 115, 18, 1);
+  fill: var(--btn2-color);
 }
 
 .offer-item-more {
@@ -851,7 +856,7 @@ width: 320px;
 }
 
 .services-links:focus {
-  color: rgba(233, 196, 121, 1);
+  color: var(--links-color);
   outline: none;
   }
 
@@ -860,23 +865,23 @@ width: 320px;
 }
 
 .services-links:active  {
-  color: rgba(164, 115, 18, 1);
+  color: var(--btn2-color);
 }
 
 .services-links:focus path{
-  stroke: rgba(233, 196, 121, 1);
+  stroke: var(--links-color);
   }
   
 .services-links:hover path{
-  stroke: rgba(204, 153, 51, 1);
+  stroke: var(--btn-color);
 }
 
 .services-links:active path{
-  stroke: rgba(204, 153, 51, 1);
+  stroke: var(--btn-color);
 }
 
 .hotel-item-look-all:focus {
-  color: rgba(233, 196, 121, 1);
+  color: var(--links-color);
   outline: none;
   }
 
@@ -885,6 +890,6 @@ width: 320px;
 }
 
 .hotel-item-look-all:active  {
-  color: rgba(164, 115, 18, 1);
+  color: var(--btn2-color);
 }
 
