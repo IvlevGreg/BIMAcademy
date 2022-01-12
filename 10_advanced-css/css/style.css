@@ -359,7 +359,8 @@ border-radius: 15px;
 
 .services-img {
   margin-bottom: 26px;  
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .services-links {
@@ -765,6 +766,7 @@ width: 320px;
   background-color: var(--btn-color);
   color: var(--white-color);
   outline: none
+   
 }
 
 .btn:hover {
@@ -836,7 +838,12 @@ width: 320px;
 
 .offer-item-more {
   transition: color 0.2s ease;
+  transition: padding 1s;
 }
+
+.offer-item-more:focus{
+   padding-right: 25px;
+   }
 
 .offer-item-more:focus {
   color: rgba(255, 204, 102, 1);
@@ -853,16 +860,23 @@ width: 320px;
 
 .services-links {
   transition: color 0.2s ease;
+  transition: transform 1s;
 }
 
+.services-links:focus svg{
+transform: translateX(10px);
+transition: transform 1s;
+ }
+ 
 .services-links:focus {
   color: var(--links-color);
   outline: none;
+  
   }
 
 .services-links:hover {
   color: var(--btn-color);
-}
+ }
 
 .services-links:active  {
   color: var(--btn2-color);
