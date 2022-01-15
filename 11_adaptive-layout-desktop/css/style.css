@@ -148,7 +148,7 @@ margin-right: 32px;
   min-height: 100%;
 }
 
-.about-item__title{
+.about-list__title{
   margin-bottom: 8px;
 }
 .about-blocks__about-more {
@@ -272,7 +272,7 @@ margin-bottom: 45px;
   margin-bottom: 100px;
 }
 
-.faq-conainer__title {
+.faq-container__title {
   position: relative;
   padding-bottom: 32px;
   border-bottom: 1px solid #CACACA;
@@ -281,7 +281,7 @@ margin-bottom: 45px;
 .faq-list__item {
   position: relative;
   display: inline-block;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items:center;
   padding: 39px 0;
   border-bottom: 1px solid #CACACA;
@@ -291,7 +291,7 @@ margin-bottom: 45px;
 margin-bottom: 39px;
 } */
 
-.faq-list_text {
+.faq-list__text {
   font-size: 24px;
 }
 
@@ -331,7 +331,7 @@ margin-bottom: 39px;
 }
 
 .footer-links__item:not(:last-child) {
-margin-bottom: 18px;  
+margin-bottom: 18px;
 }
 
 .social-links {
