@@ -6,7 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+<link rel="manifest" href="favicons/site.webmanifest">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#ffffff">
   <title>Евклид&nbsp;&mdash; проектные системы</title>
 </head>
 
@@ -15,25 +23,25 @@
     <div class="header__container flex container">
       <div class="logo">
         <a class="logo-link" href="">
-          <img class="logo-link__img" src="img/logo.svg" alt="">
+          <img class="logo-link__img logo-link__img-header" src="img/logo.svg" alt="">
         </a>
       </div>
       <nav class="nav">
         <ul class="list-reset nav-list flex">
           <li class="nav-list__item">
-            О нас
+           <a class="nav-list__link" href="#about-us"> О нас</a>
           </li>
           <li class="nav-list__item">
-            Проекты
+           <a class="nav-list__link" href="#">Проекты</a>
           </li>
           <li class="nav-list__item">
-            Этапы
+            <a class="nav-list__link" href="#how-we-work">Этапы</a>
           </li>
           <li class="nav-list__item">
-            Отзывы
+            <a class="nav-list__link" href="#">Отзывы</a>
           </li>
           <li class="nav-list__item">
-            Контакты
+            <a class="nav-list__link" href="#footer">Контакты</a>
           </li>
           <li class="nav-list__item">
             <img class="nav__search" src="img/search.svg" alt="">
@@ -60,12 +68,13 @@
           <button class="btn section-hero__btn">
             Заказать расчёт
           </button>
+          <img class="section-hero__bullets" src="img/Буллиты.svg" alt="">
         </div>
       </div>
     </section>
     <section class="section section-about">
       <div class="section-about__container container">
-        <h2 class="section-title section-about__title">
+        <h2 class="section-title section-about__title" id="about-us">
           О нас
         </h2>
         <h3 class="text-descr section-about__descr">
@@ -124,7 +133,7 @@
     </section>
     <section class="section section-work ">
       <div class="container work-container">
-        <h2 class="section-title section-work__title">
+        <h2 class="section-title section-work__title" id="how-we-work">
           Как мы работаем
         </h2>
         <ul class="list-reset work-list flex">
@@ -149,20 +158,13 @@
             <img src="/img/work-step-1.jpg" alt="">
           </div>
           <p class="text-descr step-1__descr">
-            Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках
-            спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
-            соответствующими инстанциями. А&nbsp;также представители современных социальных резервов, инициированные
-            исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
-            картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии
-            независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают
-            чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны
-            к&nbsp;ответу.</p>
+            Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,&#160; стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
         </div>
         <div class="btn-both flex">
-          <button class="btn button btn-both__btn-more">
+          <button class="btn btn-both__btn-more">
             Подробнее
           </button>
-          <button class="btn-reset button btn-both__contract">
+          <button class="btn-reset btn-both__contract">
             Договор
           </button>
         </div>
@@ -192,7 +194,7 @@
           </li>
           <li class="faq-list__item">
             <div class="faq-list__text">
-              У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/ реализовать?
+              У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать / реализовать?
             </div>
             <div>
               <svg class="faq-list__img" width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -250,36 +252,36 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer-container container">
       <ul class="list-reset footer-list flex">
         <li class="footer-list__item">
           <div class="logo">
             <a class="logo-link" href="">
-              <img class="logo-link__img" src="img/logo-white.svg" alt="">
+              <img class="logo-link__img logo-link__img-footer" src="img/logo-white.svg" alt="">
             </a>
           </div>
           <ul class="list-reset footer-links">
             <li class="footer-links__item">
-              О нас
+              <a class="footer-links__link" href="#about-us">О нас</a>
             </li>
             <li class="footer-links__item">
-              Проекты
+              <a class="footer-links__link" href="">Проекты</a>
             </li>
             <li class="footer-links__item">
-              Отзывы
+              <a class="footer-links__link" href="">Отзывы</a>
             </li>
             <li class="footer-links__item">
-              Договор оферты
+              <a class="footer-links__link" href="">Договор оферты</a>
             </li>
             <li class="footer-links__item">
-              Договор подряда
+              <a class="footer-links__link" href="">Договор подряда</a>
             </li>
             <li class="footer-links__item">
-              Конфиденциальность
+              <a class="footer-links__link" href="">Конфиденциальность</a>
             </li>
             <li class="footer-links__item">
-              Партнёрское соглашение
+              <a class="footer-links__link" href="">Партнёрское соглашение</a>
             </li>
           </ul>
           <ul class="list-reset social-links flex">
@@ -302,7 +304,7 @@
 
               </a>
             </li>
-            <li class="social-links__itemk">
+            <li class="social-links__item">
               <a href="" class="social-link">
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -319,27 +321,27 @@
             </li>
           </ul>
         </li>
-        <li class="footer-list__item">
+        <li class="footer-list__item footer-list__item-form">
           <h2 class="application-title">
             Оставить заявку
           </h2>
-          <form action="" class="application-form flex-column">
+          <form action="url" class="application-form flex-column">
             <input type="text" placeholder="Фамилия, имя и отчество*" name="ФИО" required
               class="application-form__item">
             <input type="email" placeholder="E-mail*" name="E-mail" required class="application-form__item">
-            <textarea name="" id="" cols="30" rows="10" class="application-form__item"></textarea>
+            <textarea name="message" id="message" cols="30" rows="7" placeholder="Сообщение" class="application-form__item application-form__item-textarea"></textarea>
             <div class="flex application-form__both">
               <button class="btn application-form__btn">
                 Отправить данные
               </button>
               <label>
-                <input type="checkbox" name="agree to data processing" required class="application-form__item application-form__item-agree">Согласен
+                <input type="checkbox"  name="agree to data processing" required class=" application-form__agree">Согласен
                 на обработку данных
               </label>
             </div>
           </form>
         </li>
-        <li class="text-descr footer-list__item footer-list__item-right">
+        <li class="text-descr footer-list__item footer-list__item-descr">
           Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
           разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким
           образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании
