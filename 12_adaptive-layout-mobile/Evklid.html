@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -60,7 +61,8 @@
         <div class="hero-image section-hero__image">
           <picture class="hero-pict">
             <source srcset="img/hero_1920.jpg" media="(min-width: 1025px)">
-            <source srcset="img/hero_1024.jpg" media="(max-width: 1024px)">
+            <source srcset="img/hero_1024.jpg" media="(min-width: 577px) and )max-width: 1024px)">
+            <source srcset="img/hero_1920.jpg" media="(max-width: 576px)">
             <img src="img/hero_1920.jpg" alt="красивая картинка" class="hero-image__img">
           </picture>
         </div>
