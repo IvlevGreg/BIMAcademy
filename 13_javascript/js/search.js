@@ -1,4 +1,4 @@
-let sel = document.querySelector('.nav-list__input');
+let sel = document.querySelector('.nav-list__form');
 let sel2 = document.querySelector('.search-btn');
 let sel3 = document.querySelector('.closed-btn');
 let sel4 = document.querySelectorAll('.nav-list__item-link');
@@ -15,9 +15,9 @@ document.querySelectorAll('.search-btn').forEach(function (tabsBtn) {
     sel4.forEach((el) => {
       // el.classList.toggle("nav-list__item-link--search");
     });
-    sel.classList.toggle('nav-list__input--active');
-    sel2.classList.toggle('search-btn--active');
-    sel3.classList.toggle('search-btn--active');
+    sel.classList.toggle('nav-list__form--active');
+    sel2.classList.toggle('search-btn--active-foc');
+    sel3.classList.toggle('closed-btn--active');
     sel5.classList.toggle('logo-link__img-header--search');
   });
 });
@@ -25,7 +25,7 @@ document.querySelectorAll('.search-btn').forEach(function (tabsBtn) {
 document.querySelectorAll('.menu__img-btn').forEach(function (tabsBtn2) {
   tabsBtn2.addEventListener('click', function (event2) {
     event2.preventDefault();
-    sel6.classList.toggle('.menu__img-btn--pas');
+    sel6.classList.toggle('menu__img-btn--pas');
     sel7.classList.toggle('menu__img-btn-closed')
     sel8.classList.toggle('nav-list-menu--active');
     sel6.classList.remove('menu__img-btn--active');

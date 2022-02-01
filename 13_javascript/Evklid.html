@@ -31,23 +31,7 @@
         <button class="btn-reset menu__img-btn menu__img-btn-closed">
           <img src="img/menu-x.svg" alt="" class="menu__img menu__img-x">
         </button>
-        <ul class="list-reset nav-list-menu flex-column">
-          <li class="nav-list-menu__item nav-list-menu__item-link">
-            <a class="nav-list-menu__link" href="#about-us"> О нас</a>
-          </li>
-          <li class="nav-list-menu__item nav-list-menu__item-link">
-            <a class="nav-list-menu__link" href="#">Проекты</a>
-          </li>
-          <li class="nav-list-menu__item nav-list-menu__item-link">
-            <a class="nav-list-menu__link" href="#how-we-work">Этапы</a>
-          </li>
-          <li class="nav-list-menu__item nav-list-menu__item-link">
-            <a class="nav-list-menu__link" href="#">Отзывы</a>
-          </li>
-          <li class="nav-list-menu__item nav-list-menu__item-link">
-            <a class="nav-list-menu__link" href="#footer">Контакты</a>
-          </li>
-        </ul>
+
       </div>
       <div class="logo">
         <a class="logo-link" href="">
@@ -72,8 +56,10 @@
             <a class="nav-list__link" href="#footer">Контакты</a>
           </li>
 
-          <li class="nav-list__item">
+          <li class="nav-list__item flex">
+            <form action=""  class="nav-list__form">
             <input type="text" class="nav-list__input" placeholder="Что будем искать?">
+          </form>
             <button class="btn-reset search-btn search-btn--active">
               <svg class="nav__search" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +110,23 @@
           <div class="swiper-pagination"></div>
         </div>
 
-
+        <ul class="list-reset nav-list-menu flex-column">
+          <li class="nav-list-menu__item nav-list-menu__item-link">
+            <a class="nav-list-menu__link" href="#about-us"> О нас</a>
+          </li>
+          <li class="nav-list-menu__item nav-list-menu__item-link">
+            <a class="nav-list-menu__link" href="#">Проекты</a>
+          </li>
+          <li class="nav-list-menu__item nav-list-menu__item-link">
+            <a class="nav-list-menu__link" href="#how-we-work">Этапы</a>
+          </li>
+          <li class="nav-list-menu__item nav-list-menu__item-link">
+            <a class="nav-list-menu__link" href="#">Отзывы</a>
+          </li>
+          <li class="nav-list-menu__item nav-list-menu__item-link">
+            <a class="nav-list-menu__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
 
         <div class="section-hero__block">
           <h1 class="section-hero__title">
@@ -353,7 +355,7 @@
             <div class="faq-list__text">
               Из&nbsp;чего формируется конечная стоимость проекта?
             </div>
-            <div>
+            <div class="faq-list__text ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all">
               <svg class="faq-list__img" width="50" height="50" viewBox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
