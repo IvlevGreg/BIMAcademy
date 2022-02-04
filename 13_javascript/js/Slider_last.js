@@ -1,8 +1,8 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   effect: 'cube',
   cubeEffect: {
     slideShadows: false,
