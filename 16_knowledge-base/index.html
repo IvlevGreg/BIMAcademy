@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/choices/choices.min.css">
+  <link rel="stylesheet" href="/choices/base.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="map.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+</head>
+
+<body>
+  <footer>
+    <div class="footer-container">
+      <div>
+        <ul class="footer-list">
+
+
+
+          <!-- чекбокс -->
+          <li class="footer-item footer-item-form">
+            <h2 class="form-text">Категории:</h2>
+            <form action="" class="footer-form">
+              <ul class="form-list">
+                <li class="form-item">
+                  <label class="footer-label">
+                    <input class="footer-input" type="checkbox" name="category []" value="Динозавры" id="Динозавры">
+                    Динозавры
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li class="form-item">
+                  <label class="footer-label">
+                    <input class="footer-input" type="checkbox" name="category []" value="Медведи" id="Медведи">
+                    Медведи
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li class="form-item">
+                  <label class="footer-label">
+                    <input class="footer-input" type="checkbox" name="category []" value="Косули" id="Косули">
+                    Косули
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li class="form-item">
+                  <label class="footer-label">
+                    <input class="footer-input" type="checkbox" name="category []" value="Лисы" id="Лисы">
+                    Лисы
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li class="form-item">
+                  <label class="footer-label">
+                    <input class="footer-input" type="checkbox" name="category []" value="Волки" id="Волки">
+                    Волки
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li class="form-item">
+                  <label class="footer-label">
+                    <input class="footer-input" type="checkbox" name="category []" value="Олени и лоси"
+                      id="Олени и лоси">
+                    Олени и лоси
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+              </ul>
+            </form>
+
+          </li>
+
+          <!-- селект -->
+          <li class="footer-item footer-item-select">
+            <select class="footer-select" name="select">
+              <option value="">Древесина</option>
+              <option value="">Металл</option>
+              <option value="">Камень</option>
+
+            </select>
+          </li>
+
+          <!-- Яндекс-карта -->
+          <li class="footer-item">
+            <div id="map" style="width: 600px; height: 400px"></div>
+          </li>
+          <style>
+            .ymaps-2-1-79-ground-pane {
+              filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+              -webkit-filter: grayscale(100%);
+            }
+          </style>
+          <!-- скроллбар -->
+          <li class="footer-item footer-item-simplebar">
+            <div data-simplebar class="footer-simplebar">
+              <p class="simplebar-text">
+                Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь
+                активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы
+                вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет
+                собой
+                интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая
+                примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные
+                особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем
+                настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи -
+                безусловно открывает новые горизонты для первоочередных требований.
+              </p>
+            </div>
+          </li>
+
+          <!-- форма -->
+          <li class="footer-item footer-item-buyForm">
+            <form action="#" id="form" autocomplete="off">
+              <label class="label-buyForm" for="name">Как вас зовут?</label>
+              <input type="text" class="form__input form-control" placeholder="Имя*" autocomplete="off" name="name"
+                required id="name" />
+              <label class="label-buyForm" for="tel">Укажите ваш телефон</label>
+              <input type="tel" class="form__input form-control" placeholder="Телефон*" autocomplete="off" name="tel"
+                required id="tel" />
+              <label class="label-buyForm" for="email">Укажите ваш e-mail</label>
+              <input type="email" class="form__input form-control form__input-last" placeholder="E-mail*"
+                autocomplete="off" name="email" required id="email" />
+              <button class="btn btn-primary" id="submit-btn">Заказать</button>
+            </form>
+          </li>
+
+          <!-- Тултип -->
+          <li class="footer-item tooltip-item">
+            <p class="tooltip-text">
+              Следует отметить, что <br> социально-экономическое развитие способствует повышению качества переосмысления
+              внешнеэкономических политик.
+            </p>
+            <div class="tooltip-imges">
+              <p class="tooltip-hint">
+                Глава 2, страница 176
+              </p>
+              <img class="tooltip-img" src="img/Union_cut.png" alt="">
+              <svg class="tooltip-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                  fill="#BCBCBC" />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/choices/choices.min.js"></script>
+  <script>
+    const element = document.querySelector('.footer-select');
+    const choices = new Choices(element, {
+      searchEnabled: false
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="form.js"></script>
+  <script src="inputmask.min.js"></script>
+  <script src="mask.js"></script>
+  <script>
+    new JustValidate('.form', {
+      rules: {
+        tel: {
+          required: true,
+          function: (name, value) => {
+            const phone = selector.inputmask.unmaskedvalue()
+            console.log(phone)
+            return Number(phone) && phone.length === 10
+
+          },
+        },
+      },
+    });
+  </script>
+
+</body>
+
+</html>
