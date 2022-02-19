@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/choices/choices.min.css">
-  <link rel="stylesheet" href="/choices/base.css">
-
+  <link rel="stylesheet" href="choices/choices.min.css">
+  <link rel="stylesheet" href="choices/base.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
@@ -82,10 +81,13 @@
           <!-- селект -->
           <li class="footer-item footer-item-select">
             <select class="footer-select" name="select">
-              <option value="">Древесина</option>
-              <option value="">Металл</option>
-              <option value="">Камень</option>
-
+              <option placeholder >Материал</option>
+              <option value="Древесина">Древесина</option>
+              <option value="Металл">Металл</option>
+              <option value="Камень">Камень</option>
+              <option value="Пластик">Пластик</option>
+              <option value="Композитный">Композитный</option>
+              <option value="Гипс">Гипс</option>
             </select>
           </li>
 
@@ -118,7 +120,7 @@
 
           <!-- форма -->
           <li class="footer-item footer-item-buyForm">
-            <form action="#" id="form" autocomplete="off">
+            <form class="form" action="#" id="form" autocomplete="off">
               <label class="label-buyForm" for="name">Как вас зовут?</label>
               <input type="text" class="form__input form-control" placeholder="Имя*" autocomplete="off" name="name"
                 required id="name" />
@@ -156,32 +158,21 @@
     </div>
   </footer>
 
-  <script src="/choices/choices.min.js"></script>
+  <script src="choices/choices.min.js"></script>
   <script>
     const element = document.querySelector('.footer-select');
     const choices = new Choices(element, {
-      searchEnabled: false
+      searchEnabled: false,
+      shouldSortItems: false,
+      shouldSort: false,
+  
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-  <script src="form.js"></script>
+
   <script src="inputmask.min.js"></script>
   <script src="mask.js"></script>
-  <script>
-    new JustValidate('.form', {
-      rules: {
-        tel: {
-          required: true,
-          function: (name, value) => {
-            const phone = selector.inputmask.unmaskedvalue()
-            console.log(phone)
-            return Number(phone) && phone.length === 10
-
-          },
-        },
-      },
-    });
-  </script>
+  <script src="form.js"></script>
 
 </body>
 

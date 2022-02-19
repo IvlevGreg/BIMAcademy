@@ -20,7 +20,7 @@ ymaps.ready(function () {
       // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
       // Своё изображение иконки метки.
-      iconImageHref: '../img/Subtract.svg',
+      iconImageHref: './img/Subtract.svg',
       // Размеры метки.
       iconImageSize: [30, 42],
       // Смещение левого верхнего угла иконки относительно

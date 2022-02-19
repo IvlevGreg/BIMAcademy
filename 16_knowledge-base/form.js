@@ -1,5 +1,7 @@
 
-const validation = new JustValidate('#form');
+const validation = new JustValidate('.form');
+
+
 
 validation
   .addField('#name', [
@@ -19,11 +21,16 @@ validation
       errorMessage: 'Укажите имя',
     },
   ])
-  .addField('#tel', [
+  validation.addField('#tel', [
     {
-      rule: 'required',
-      errorMessage: 'Укажите телефон',
+      errorMessage: 'Введите корректный телефон',
+      validator: (value) => {
+        const phone = selector.inputmask.unmaskedvalue()
+        console.log(phone)
+        return Number(phone) && phone.length === 10
+      
     },
+  },
   ])
 
   .addField('#email', [
