@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-v5",
+  "version": "1.0.0",
+  "description": "with sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "le\u001b[2~\u001b["
+  ],
+  "author": "Greg",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "bootstrap": "^5.1.3",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0"
+  }
+}
