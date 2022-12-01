@@ -1,60 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link type="image/png" sizes="192x192" rel="icon" href="img/favicon.png">  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <title>
+    BIM Academy
+  </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+
+  <link rel="stylesheet" href="assets/vendor/normalize.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap.css">
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="body">
-  <header class="header ">
-    <div class="header-container container d-flex align-middle ">
-      <div class="logo  align-middle">
-        <a href="" class="logo__link ">
-          <picture>
-            <source srcset="img/logo_sm.png" media="(max-width: 575px)">
-            <img src="img/logo.png" alt="" class="logo__img">
-          </picture>
-
+  <header class="header">
+    <div class="header-container container d-flex align-middle">
+      <div class="logo align-middle">
+        <a href="" class="logo__link">
+          <svg class="logo__svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M50.3716 25.3087C50.3716 39.2859 39.0956 50.6167 25.1858 50.6167C11.2761 50.6167 0 39.2859 0 25.3087C0 11.3315 11.2761 0.000732422 25.1858 0.000732422C39.0956 0.000732422 50.3716 11.3315 50.3716 25.3087ZM32.2562 27.4653C32.2562 32.7166 28.0198 36.9735 22.7939 36.9735C17.568 36.9735 13.3316 32.7166 13.3316 27.4653C13.3316 22.2141 17.568 17.9572 22.7939 17.9572C28.0198 17.9572 32.2562 22.2141 32.2562 27.4653Z"
+              fill="white"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M48.4369 20.7859C48.4369 31.2883 39.9641 39.8022 29.5124 39.8022C19.0606 39.8022 10.5878 31.2883 10.5878 20.7859C10.5878 10.2834 19.0606 1.76953 29.5124 1.76953C39.9641 1.76953 48.4369 10.2834 48.4369 20.7859ZM32.2561 27.4646C32.2561 32.7158 28.0197 36.9728 22.7938 36.9728C17.568 36.9728 13.3316 32.7158 13.3316 27.4646C13.3316 22.2134 17.568 17.9564 22.7938 17.9564C28.0197 17.9564 32.2561 22.2134 32.2561 27.4646Z"
+              fill="#0CBCB3"></path>
+            <path
+              d="M93.7686 18.5928C94.814 19.9584 95.3367 21.604 95.3367 23.4948C95.3367 26.331 94.1519 28.5369 91.8173 30.1126C89.4826 31.6883 85.5799 32.4236 81.1545 32.4236H62.9999V0H80.2485C84.5345 0 88.3327 0.770322 90.528 2.31097C92.7233 3.85161 93.8383 5.91748 93.8383 8.47355C93.8383 9.97918 93.455 11.3447 92.7233 12.5352C91.9567 13.7257 90.3189 14.7062 88.8554 15.4415C90.7371 16.1768 92.7233 17.2272 93.7686 18.5928ZM73.6975 7.63319V12.4652H78.785C81.1545 12.4652 82.3393 11.6599 82.3393 10.0492C82.3393 8.43853 81.1545 7.63319 78.785 7.63319H73.6975V7.63319ZM83.8376 22.2343C83.8376 20.5536 82.6529 19.6782 80.2485 19.6782H73.6975V24.7904H80.2485C82.6529 24.7904 83.8376 23.95 83.8376 22.2343Z"
+              fill="white"></path>
+            <path d="M99.0653 0H109.937V32.4236H99.0653V0Z" fill="white"></path>
+            <path
+              d="M144.016 32.4236L143.912 17.6474L136.943 32.4236H132.134L125.095 18.1726V32.4236H115.199V0H124.154L134.678 17.2622L144.887 0H153.843L153.947 32.4236H144.016Z"
+              fill="white"></path>
+            <path
+              d="M72.8618 46.9114H66.4851L65.1609 49.8876H63.3838L68.8197 37.9126H70.5272L75.9631 49.8876H74.1511L72.8618 46.9114ZM72.2346 45.5458L69.656 39.6983L67.0774 45.5458H72.2346Z"
+              fill="white"></path>
+            <path
+              d="M79.6921 49.2577C71.5382 44.3207 80.9814 33.186 87.4975 39.6987L86.3825 40.7842C83.6994 37.8079 78.0892 39.8388 78.2983 43.9705C78.0892 48.1023 83.6994 50.1331 86.3825 47.1218L87.4975 48.2073C85.6507 50.3082 82.0965 50.5883 79.6921 49.2577Z"
+              fill="white"></path>
+            <path
+              d="M97.3235 46.9114H90.9467L89.6226 49.8876H87.8455L93.2814 37.9126H94.9888L100.425 49.8876H98.6128L97.3235 46.9114ZM96.6963 45.5458L94.1177 39.6983L91.5391 45.5458H96.6963Z"
+              fill="white"></path>
+            <path
+              d="M102.202 37.9486C106.732 37.6685 113.91 37.6685 113.736 43.9361C113.945 50.2037 106.732 50.2037 102.202 49.9236V37.9486ZM107.15 48.418C113.492 48.8382 113.492 38.9991 107.15 39.4192H103.91V48.418H107.15Z"
+              fill="white"></path>
+            <path
+              d="M125.061 48.417V49.8876H116.349V37.9126H124.817V39.3832H118.057V43.0598H124.085V44.4954H118.057V48.347H125.061V48.417Z"
+              fill="white"></path>
+            <path
+              d="M138.964 49.9189V41.2002L134.643 49.9189H133.842L129.486 41.2702V49.9189H127.849V37.9438H129.242L134.225 48.0981L139.173 37.9438H140.567V49.9189H138.964V49.9189Z"
+              fill="white"></path>
+            <path
+              d="M148.79 45.7919V49.9236H147.083V45.7569L142.309 37.9836H144.156L147.989 44.2863L151.857 37.9836H153.564L148.79 45.7919Z"
+              fill="white"></path>
+          </svg>
         </a>
       </div>
 
-      <nav class="nav ">
-        <div class="">
-          <button class="nav__btn d-block d-sm-none">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="" fill-rule="evenodd" clip-rule="evenodd"
-                d="M4.6875 21.5625C4.6875 21.3139 4.78627 21.0754 4.96209 20.8996C5.1379 20.7238 5.37636 20.625 5.625 20.625H24.375C24.6236 20.625 24.8621 20.7238 25.0379 20.8996C25.2137 21.0754 25.3125 21.3139 25.3125 21.5625C25.3125 21.8111 25.2137 22.0496 25.0379 22.2254C24.8621 22.4012 24.6236 22.5 24.375 22.5H5.625C5.37636 22.5 5.1379 22.4012 4.96209 22.2254C4.78627 22.0496 4.6875 21.8111 4.6875 21.5625ZM4.6875 14.0625C4.6875 13.8139 4.78627 13.5754 4.96209 13.3996C5.1379 13.2238 5.37636 13.125 5.625 13.125H24.375C24.6236 13.125 24.8621 13.2238 25.0379 13.3996C25.2137 13.5754 25.3125 13.8139 25.3125 14.0625C25.3125 14.3111 25.2137 14.5496 25.0379 14.7254C24.8621 14.9012 24.6236 15 24.375 15H5.625C5.37636 15 5.1379 14.9012 4.96209 14.7254C4.78627 14.5496 4.6875 14.3111 4.6875 14.0625ZM4.6875 6.5625C4.6875 6.31386 4.78627 6.0754 4.96209 5.89959C5.1379 5.72377 5.37636 5.625 5.625 5.625H24.375C24.6236 5.625 24.8621 5.72377 25.0379 5.89959C25.2137 6.0754 25.3125 6.31386 25.3125 6.5625C25.3125 6.81114 25.2137 7.0496 25.0379 7.22541C24.8621 7.40123 24.6236 7.5 24.375 7.5H5.625C5.37636 7.5 5.1379 7.40123 4.96209 7.22541C4.78627 7.0496 4.6875 6.81114 4.6875 6.5625Z"
-                fill="white" />
-            </svg>
-          </button>
-        </div>
+      <nav class="nav">
+        <button class="nav__btn burger d-block d-sm-none">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="" fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.6875 21.5625C4.6875 21.3139 4.78627 21.0754 4.96209 20.8996C5.1379 20.7238 5.37636 20.625 5.625 20.625H24.375C24.6236 20.625 24.8621 20.7238 25.0379 20.8996C25.2137 21.0754 25.3125 21.3139 25.3125 21.5625C25.3125 21.8111 25.2137 22.0496 25.0379 22.2254C24.8621 22.4012 24.6236 22.5 24.375 22.5H5.625C5.37636 22.5 5.1379 22.4012 4.96209 22.2254C4.78627 22.0496 4.6875 21.8111 4.6875 21.5625ZM4.6875 14.0625C4.6875 13.8139 4.78627 13.5754 4.96209 13.3996C5.1379 13.2238 5.37636 13.125 5.625 13.125H24.375C24.6236 13.125 24.8621 13.2238 25.0379 13.3996C25.2137 13.5754 25.3125 13.8139 25.3125 14.0625C25.3125 14.3111 25.2137 14.5496 25.0379 14.7254C24.8621 14.9012 24.6236 15 24.375 15H5.625C5.37636 15 5.1379 14.9012 4.96209 14.7254C4.78627 14.5496 4.6875 14.3111 4.6875 14.0625ZM4.6875 6.5625C4.6875 6.31386 4.78627 6.0754 4.96209 5.89959C5.1379 5.72377 5.37636 5.625 5.625 5.625H24.375C24.6236 5.625 24.8621 5.72377 25.0379 5.89959C25.2137 6.0754 25.3125 6.31386 25.3125 6.5625C25.3125 6.81114 25.2137 7.0496 25.0379 7.22541C24.8621 7.40123 24.6236 7.5 24.375 7.5H5.625C5.37636 7.5 5.1379 7.40123 4.96209 7.22541C4.78627 7.0496 4.6875 6.81114 4.6875 6.5625Z"
+              fill="white" />
+          </svg>
+        </button>
 
-        <ul class="nav-list d-none d-sm-block">
-          <li class="nav-item">
-            <a href="#" class="nav-item__link">
+        <ul class="d-none d-sm-block">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
               Главная
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#adv" class="nav-item__link">
+          <li class="nav__item">
+            <a href="#adv" class="nav__link">
               О нас
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#teachers" class="nav-item__link">
+          <li class="nav__item">
+            <a href="#teachers" class="nav__link">
               Преподаватели
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#courses" class="nav-item__link">
+          <li class="nav__item">
+            <a href="#courses" class="nav__link">
               Курсы
             </a>
           </li>
@@ -72,9 +106,10 @@
             Курсы 3D моделирования
           </h1>
           <h3 class="intro__descr">
-            Следует отметить, что существующая теория способствует повышению качества благоприятных перспектив. Не&nbsp;следует, однако, забывать.
+            Следует отметить, что существующая теория способствует повышению качества благоприятных перспектив.
+            Не&nbsp;следует, однако, забывать.
           </h3>
-          <button class="intro__btn btn">
+          <button class="intro__btn btn btn-primary">
             Выбрать курс
           </button>
         </div>
@@ -100,7 +135,7 @@
         </pecture> -->
         <div class="adv__intro">
           <h2 class="adv__title title">
-            Преимущества обучения в&nbsp;skillbox
+            Преимущества обучения в&nbsp;BIM Academy
           </h2>
           <h3 class="adv__descr">
             Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний, которые
@@ -224,7 +259,7 @@
                     <source srcset="img/courses/courses_1_690px.jpg" media="(min-width: 768px)">
                     <source srcset="img/courses/courses_1_510px.jpg" media="(min-width: 576px)">
                     <source srcset="img/courses/courses_1_320px.jpg" media="(max-width: 576px)">
-                    <img src="img/courses/courses_1_1100px.jpg" alt="" class="course__img img">
+                    <img src="img/courses/courses_1_1100px.jpg" alt="" class="courses__img img">
                   </picture>
                   <div class="courses__text-container">
                     <h3 class="courses__item-title item-title">
@@ -238,11 +273,9 @@
                     </h4>
                   </div>
                 </div>
-                <div class="courses__btn-container">
-                  <button class="courses__btn btn">
-                    Подробнее
-                  </button>
-                </div>
+                <button class="courses__btn btn btn-primary">
+                  Подробнее
+                </button>
               </div>
             </li>
             <li class="courses__item col col-12 col-sm-6">
@@ -256,7 +289,7 @@
                     <source srcset="img/courses/courses_2_690px.jpg" media="(min-width: 768px)">
                     <source srcset="img/courses/courses_2_510px.jpg" media="(min-width: 576px)">
                     <source srcset="img/courses/courses_2_320px.jpg" media="(max-width: 576px)">
-                    <img src="img/courses/courses_2_1100px.jpg" alt="" class="course__img img">
+                    <img src="img/courses/courses_2_1100px.jpg" alt="" class="courses__img img">
                   </picture>
                   <div class="courses__text-container courses__text-container-pr">
                     <h3 class="courses__item-title item-title">
@@ -269,12 +302,10 @@
                     </h4>
                   </div>
                 </div>
-                <div class="courses__btn-container">
-                  <button class="courses__btn btn">
-                    Подробнее
-                  </button>
+                <button class="courses__btn btn btn-primary">
+                  Подробнее
+                </button>
 
-                </div>
               </div>
             </li>
             <li class="courses__item col col-12 col-sm-6">
@@ -288,7 +319,7 @@
                     <source srcset="img/courses/courses_3_690px.jpg" media="(min-width: 768px)">
                     <source srcset="img/courses/courses_3_510px.jpg" media="(min-width: 576px)">
                     <source srcset="img/courses/courses_3_320px.jpg" media="(max-width: 576px)">
-                    <img src="img/courses/courses_3_1100px.jpg" alt="" class="course__img img">
+                    <img src="img/courses/courses_3_1100px.jpg" alt="" class="courses__img img">
                   </picture>
                   <div class="courses__text-container">
                     <h3 class="courses__item-title item-title">
@@ -300,11 +331,9 @@
                     </h4>
                   </div>
                 </div>
-                <div class="courses__btn-container">
-                  <button class="courses__btn btn">
-                    Подробнее
-                  </button>
-                </div>
+                <button class="courses__btn btn btn-primary">
+                  Подробнее
+                </button>
               </div>
 
             </li>
@@ -319,7 +348,7 @@
                     <source srcset="img/courses/courses_4_690px.jpg" media="(min-width: 768px)">
                     <source srcset="img/courses/courses_4_510px.jpg" media="(min-width: 576px)">
                     <source srcset="img/courses/courses_4_320px.jpg" media="(max-width: 576px)">
-                    <img src="img/courses/courses_4_1100px.jpg" alt="" class="course__img img">
+                    <img src="img/courses/courses_4_1100px.jpg" alt="" class="courses__img img">
                   </picture>
                   <div class="courses__text-container">
                     <h3 class="courses__item-title item-title">
@@ -333,11 +362,9 @@
                     </h4>
                   </div>
                 </div>
-                <div class="courses__btn-container">
-                  <button class="courses__btn btn">
-                    Подробнее
-                  </button>
-                </div>
+                <button class="courses__btn btn btn-primary">
+                  Подробнее
+                </button>
               </div>
 
             </li>
@@ -348,7 +375,7 @@
 
   </main>
   <footer class="footer">
-    <div class="footer__container d-flex align-items-center ">
+    <div class="footer__container d-flex align-items-center">
       <ul class="footer__link-list d-flex align-middle">
         <li class="footer__link-item">
           <a href="" class="footer__link">
@@ -389,11 +416,10 @@
       </ul>
     </div>
 
-    <h3 class="footer__PS d-flex align-items-center">SKILLBOX ® 2021</h3>
+    <h3 class="footer__PS d-flex align-items-center">BIM Academy ® 2022</h3>
 
   </footer>
 
-  <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
