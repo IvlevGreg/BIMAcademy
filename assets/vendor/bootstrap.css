@@ -377,6 +377,11 @@ select:disabled {
   opacity: 1;
 }
 
+.d-none {
+  display: none;
+
+}
+
 [list]::-webkit-calendar-picker-indicator {
   display: none;
 }
